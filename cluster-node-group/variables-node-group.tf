@@ -4,9 +4,6 @@ variable "labels" {
 variable "instance_type" {
   type = string
 }
-variable "image_id" {
-  type = string
-}
 variable "update_default_version" {
   type = bool
 }

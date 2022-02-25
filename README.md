@@ -61,8 +61,6 @@ module "eks" {
 node_groups = [
   {
     labels                      = {},
-    user_data                   = "",
-    image_id                    = "",
     instance_type               = "t3.medium",
     update_default_version      = true,
     http_endpoint               = "enabled",
