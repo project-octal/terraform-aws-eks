@@ -26,7 +26,6 @@ module "eks_cluster_nodes" {
   ######################################
   #### EKS Node Group Configuration ####
   ######################################
-  image_id                            = var.node_groups[count.index].image_id
   instance_type                       = var.node_groups[count.index].instance_type
   labels                              = var.node_groups[count.index].labels
   update_default_version              = var.node_groups[count.index].update_default_version

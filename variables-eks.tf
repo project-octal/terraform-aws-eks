@@ -29,7 +29,6 @@ variable "allow_http" {
 variable "node_groups" {
   type = list(
     object({
-      image_id : string,
       instance_type : string,
       labels : map(string),
       update_default_version : bool,
