@@ -14,6 +14,6 @@ variable "vpc_id" {
   description = "The ID of the active account VPC"
 }
 variable "cluster_subnets" {
-  type        = map(string)
+  type        = list(string)
   description = "A list of the subnets to use for the EKS control plane"
 }
