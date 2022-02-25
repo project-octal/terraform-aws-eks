@@ -1,5 +1,5 @@
 resource "random_id" "cluster_id" {
-  byte_length = 8
+  byte_length = 2
 }
 
 locals {
