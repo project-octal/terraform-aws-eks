@@ -102,7 +102,7 @@ resource "kubernetes_deployment" "metrics_deployment" {
         }
         container {
           name              = "metrics-server"
-          image             = "k8s.gcr.io/metrics-server-amd64:v0.3.6"
+          image             = "k8s.gcr.io/metrics-server-amd64:v0.6.1"
           image_pull_policy = "IfNotPresent"
           args = [
             "--cert-dir=/tmp",
